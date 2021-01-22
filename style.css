@@ -1,0 +1,63 @@
+.person {
+    width: 15em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+header {
+    margin: 0 0 2em 0;
+    max-height: 3rem;
+}
+
+body {
+    font-family: Calibri, cursive;
+    font-size: large;
+    margin: 0 0.5em 0 0.5em;
+}
+
+main {
+    margin: 0 1em 0 1em;
+}
+
+img {
+    max-width: 15rem;
+}
+
+#data {
+    align-content: center;
+}
+
+nav {
+    box-sizing: border-box;
+    max-width: inherit;
+    display: inline-flex;
+    justify-items: center;
+    width: 100%;
+    border-bottom: 0.1em solid black;
+    margin: auto;
+    height: 3em;
+    align-items: center;
+    font-size: larger;
+}
+
+nav > a:hover {
+   box-shadow: inset 0 0 5px gray;
+}
+
+nav > a {
+    display: flex;
+    margin: fill;
+    text-underline: none;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    padding: 0 1em 0 1em;
+    align-items: center;
+    justify-items: center;
+}
