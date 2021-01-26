@@ -105,3 +105,22 @@ td {
 .hobby td {
     padding: unset;
 }
+
+@media screen and (max-width: 600px){
+    body {
+        font-size: 0.5em;
+    }
+
+    main {
+        font-size: 0.5em;
+    }
+
+    td {
+        font-size: 0.5em;
+        padding: 0.2em 0.2em 0.2em 0.2em;
+    }
+
+    img {
+        max-width: 5rem;
+    }
+}
