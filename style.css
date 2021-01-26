@@ -123,4 +123,8 @@ td {
     img {
         max-width: 5rem;
     }
+
+    .bullet {
+        width: fit-content;
+    }
 }
