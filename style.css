@@ -1,9 +1,13 @@
 .person {
-    width: 15em;
-    height: auto;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1em 0.5em 1em 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
 }
 
 span {
@@ -16,8 +20,7 @@ header {
 }
 
 body {
-    font-family: Calibri, cursive;
-    font-size: large;
+    font-family: "Trebuchet MS", Helvetica, sans-serif, cursive;
     margin: 0 0.5em 0 0.5em;
 }
 
@@ -26,7 +29,7 @@ main {
 }
 
 img {
-    max-width: 15rem;
+    max-width: 10rem;
 }
 
 #data {
@@ -47,7 +50,7 @@ nav {
 }
 
 nav > a:hover {
-   box-shadow: inset 0 0 5px gray;
+   box-shadow: inset 0 0 10px gray;
 }
 
 nav > a {
@@ -60,4 +63,45 @@ nav > a {
     padding: 0 1em 0 1em;
     align-items: center;
     justify-items: center;
+    background-image: linear-gradient(white 80%, gray);
+}
+
+.curriculum {
+    display: flex;
+    flex-wrap: wrap;
+    alignment-baseline: baseline;
+    margin-left: 2px;
+    justify-items: auto;
+    justify-content: normal;
+    align-content: center;
+    align-items: flex-start;
+}
+
+main {
+    display: flex;
+    font-size: 1.2em;
+}
+
+.top-list > li{
+    padding: 10px 0;
+}
+
+.bullet {
+   margin: 1em 0.5em 1em 0.5em;
+    width: 46%;
+    padding: 1em 1em 1em 1em;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+}
+
+tr {
+    vertical-align: top;
+}
+
+td {
+    padding: 1em 1em 1em 1em;
+    font-size: 1.2em;
+}
+
+.hobby td {
+    padding: unset;
 }
