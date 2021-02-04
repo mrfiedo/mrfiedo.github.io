@@ -8,6 +8,7 @@
     margin: 1em 0.5em 1em 0.5em;
     padding: 0.5em 0.5em 0.5em 0.5em;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: white;
 }
 
 span {
@@ -21,12 +22,13 @@ header {
 
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif, cursive;
-    margin: 0 0.5em 0 0.5em;
+    margin: 0;
     box-sizing: border-box;
     font-size: 1.2rem;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
+    background-color: rgba(0,125,255,0.1);
 }
 
 main {
@@ -54,6 +56,7 @@ nav {
     height: 3em;
     align-items: center;
     font-size: larger;
+    background-color: white;
 }
 
 nav > a:hover {
@@ -70,6 +73,9 @@ nav > a {
     padding: 0 1em 0 1em;
     align-items: center;
     justify-items: center;
+}
+
+nav .active {
     background-image: linear-gradient(white 80%, gray);
 }
 
@@ -78,6 +84,7 @@ nav > a {
     flex-wrap: wrap;
     alignment-baseline: baseline;
     margin-left: 2px;
+    margin-top: 0.5em;
     justify-items: center;
     justify-content: normal;
     align-content: normal;
@@ -91,6 +98,15 @@ nav > a {
     padding: 1em 1em 1em 1em;
     box-sizing: border-box;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.skills > .top-list {
+    width: 100%;
+}
+
+.skills tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 table {
@@ -103,9 +119,9 @@ td {
     min-width: border-box;
 }
 
-.hobby td {
+/*.hobby td {
     padding: unset;
-}
+}*/
 
 .details {
     color: dimgray;
@@ -116,6 +132,14 @@ td {
     display: block;
     margin: 10px 0 0 0;
     content: "";
+}
+
+.grade-list tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.grade-list td {
+    margin: auto;
 }
 
 @media screen and (max-width: 800px) {
