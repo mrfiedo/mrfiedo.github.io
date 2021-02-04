@@ -23,7 +23,10 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif, cursive;
     margin: 0 0.5em 0 0.5em;
     box-sizing: border-box;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
 
 main {
@@ -84,16 +87,19 @@ nav > a {
 
 .bullet {
     margin: 1em 0.5em 1em 0.5em;
-    width: 48.77%;
+    width: 48.7%;
     padding: 1em 1em 1em 1em;
     box-sizing: border-box;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
+table {
+    font-size: 1.2rem;
+}
+
 td {
     padding: 0.4em;
     vertical-align: top;
-    font-size: 1.2em;
     min-width: border-box;
 }
 
