@@ -86,7 +86,7 @@ nav > a {
 }
 
 .bullet {
-    margin: 1em 0.5em 1em 0.5em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
     width: 48.7%;
     padding: 1em 1em 1em 1em;
     box-sizing: border-box;
@@ -105,6 +105,17 @@ td {
 
 .hobby td {
     padding: unset;
+}
+
+.details {
+    color: dimgray;
+    content: " ";
+}
+
+.details br {
+    display: block;
+    margin: 10px 0 0 0;
+    content: "";
 }
 
 @media screen and (max-width: 800px) {
@@ -150,7 +161,7 @@ td {
     }
 }
 
-@media screen and (max-width: 1800px) and (min-width: 800px) {
+@media screen and (max-width: 1800px) and (min-width: 801px) {
 
     .bullet {
         max-width: 100%;
@@ -158,7 +169,7 @@ td {
     }
 
     .person {
-        min-width: 22.5%;
+        min-width: 25%;
         max-width: 40%;
     }
 
