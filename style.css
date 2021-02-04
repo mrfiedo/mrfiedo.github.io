@@ -145,7 +145,10 @@ td {
 @media screen and (max-width: 800px) {
 
     main {
-        display: block;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-items: center;
     }
 
     td {
@@ -157,7 +160,6 @@ td {
     }
 
     .person {
-        max-width: revert;
         width: 100%;
         height: min-content;
         box-shadow: none;
@@ -165,6 +167,11 @@ td {
 
     .curriculum {
         width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        align-items: center;
     }
 
     .bullet {
