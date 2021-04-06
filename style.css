@@ -23,6 +23,7 @@ header {
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif, cursive;
     margin: 0;
+    padding: 0.5em 0 0.5em 0;
     box-sizing: border-box;
     font-size: 1.2rem;
     -moz-text-size-adjust: none;
@@ -93,7 +94,7 @@ nav .active {
 }
 
 .bullet {
-    margin: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0.5em 0 0.5em 0;
     width: 48.7%;
     padding: 1em 1em 1em 1em;
     box-sizing: border-box;
@@ -170,7 +171,6 @@ td {
         flex-wrap: nowrap;
         flex-direction: column;
         box-sizing: border-box;
-        align-items: center;
         align-items: center;
     }
 
