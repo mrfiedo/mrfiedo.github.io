@@ -3,11 +3,14 @@ import * as PlanService from './services/PlanService.js'
 const app = Vue.createApp({
     data() {
       return {
-          entries: []
+          entries: [],
+          error: false,
+          loaded: false
       }
     },
     mounted() {
         this.loadPlan();
+        this.loaded = true
     },
     methods: {
         loadPlan() {
@@ -15,11 +18,11 @@ const app = Vue.createApp({
 
             PlanService.getPlan().then(entries => {
                 this.entries = entries;
-            })
+            }).catch(err => { console.log(err); this.error = true });
         }
     },
     template: `
-<div class="container-lg">
+<div class="container-lg" v-if="loaded && !error">
     <table class="table">
         <thead>
             <tr>
