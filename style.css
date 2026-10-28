@@ -144,6 +144,7 @@ td {
 /* ==========================================================================
    Ergänzungen für style.css
    Abschnitt: Zertifizierungen & Badges
+   Stand: korrigiert nach Prüfung gegen das vollständige style.css
    ========================================================================== */
 
 .certifications h3 {
@@ -166,7 +167,8 @@ td {
     padding: 0.9em 0.6em;
     border: 1px solid #dcdcdc;
     border-radius: 10px;
-    background-color: #fff;
+    box-sizing: border-box;
+    background-color: #fafafa;
     color: inherit;
     text-align: center;
     text-decoration: none;
@@ -185,6 +187,9 @@ td {
 }
 
 .badge img {
+    /* Überschreibt die globalen img-Regeln (10rem bzw. 5rem auf Mobile),
+       damit die Badge-Größe unabhängig von der Root-Schriftgröße bleibt. */
+    max-width: 100%;
     width: 80px;
     height: 80px;
     object-fit: contain;
@@ -197,6 +202,10 @@ td {
 }
 
 .badge-meta {
+    /* WICHTIG: Die globale Regel "span { font-weight: bold; }" würde diesen
+       Text sonst fett setzen. Ohne diese Zeile erscheint die Zeile
+       "Herausgeber · Datum" in Fettschrift. */
+    font-weight: normal;
     font-size: 0.78em;
     color: #666;
 }
@@ -205,6 +214,19 @@ td {
     margin: 0.5em 0 0;
     color: #555;
 }
+
+/* --------------------------------------------------------------------------
+   OPTIONAL: Zertifizierungs-Karte immer über die volle Breite
+   Standardmäßig ist .bullet ab 1600px Breite nur 48.7% breit und liegt
+   dadurch neben der Fähigkeiten-Karte. Diese Regel hebt das auf.
+   Höhere Spezifität (.bullet.certifications) nötig, damit sie gegen
+   ".bullet" in den Media Queries gewinnt.
+   -------------------------------------------------------------------------- */
+/*
+.bullet.certifications {
+    min-width: 100%;
+}
+*/
 
 /* ==========================================================================
    Ergänzungen für style.css
