@@ -42,6 +42,16 @@ img {
     max-width: 10rem;
 }
 
+.profile-img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 0.5em auto 1em auto;
+}
+
 #data {
     align-content: center;
 }
@@ -275,6 +285,12 @@ td {
 
     img {
         max-width: 5rem;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        max-width: 150px;
     }
 
     .person {
