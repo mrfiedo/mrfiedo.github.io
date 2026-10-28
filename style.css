@@ -141,6 +141,122 @@ td {
     margin: auto;
 }
 
+/* ==========================================================================
+   Ergänzungen für style.css
+   Abschnitt: Zertifizierungen & Badges
+   ========================================================================== */
+
+.certifications h3 {
+    margin: 1.5em 0 0.6em;
+    font-size: 1.05em;
+}
+
+.badge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1em;
+    margin: 0 0 1.5em;
+}
+
+.badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45em;
+    padding: 0.9em 0.6em;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #fff;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.badge:hover,
+.badge:focus-visible {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.badge:focus-visible {
+    outline: 2px solid #0057b8;
+    outline-offset: 2px;
+}
+
+.badge img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.badge-name {
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1.25;
+}
+
+.badge-meta {
+    font-size: 0.78em;
+    color: #666;
+}
+
+.certifications-note {
+    margin: 0.5em 0 0;
+    color: #555;
+}
+
+/* ==========================================================================
+   Ergänzungen für style.css
+   Abschnitt: Noten (ersetzt die Inline-Styles im Original)
+   ========================================================================== */
+
+.grades-note {
+    display: block;
+    margin: 0 0 1em;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.grades-download {
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+/* ==========================================================================
+   Barrierefreiheit: Animationen abschaltbar
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .badge {
+        transition: none;
+    }
+
+    .badge:hover,
+    .badge:focus-visible {
+        transform: none;
+    }
+}
+
+/* ==========================================================================
+   Optional: dunkles Farbschema
+   Nur aktivieren, wenn die restliche Seite ebenfalls Dark Mode unterstützt.
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    .badge {
+        background-color: #1e1e1e;
+        border-color: #3a3a3a;
+    }
+
+    .badge-meta,
+    .grades-note,
+    .certifications-note {
+        color: #aaa;
+    }
+}
+
+
 @media screen and (max-width: 800px) {
 
     main {
